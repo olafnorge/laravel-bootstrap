@@ -1,0 +1,42 @@
+{
+    "name": "olafnorge/laravel-bootstrap",
+    "description": "HTML and Form Builders for the Laravel Framework with Bootstrap 4 support.",
+    "type": "library",
+    "homepage": "https://github.com/olafnorge/laravel-bootstrap",
+    "support": {
+        "source": "https://github.com/olafnorge/laravel-bootstrap",
+        "issues": "https://github.com/olafnorge/laravel-bootstrap/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Volker Machon",
+            "email": "github@olafnorge.de"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.3",
+        "laravelcollective/html": "^6.1"
+    },
+    "suggest": {
+        "davejamesmiller/laravel-breadcrumbs": "A simple Laravel-style way to create breadcrumbs."
+    },
+    "autoload": {
+        "psr-4": {
+            "olafnorge\\Html\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "olafnorge\\Html\\HtmlServiceProvider"
+            ],
+            "aliases": {
+                "Form": "olafnorge\\Html\\FormFacade",
+                "Html": "olafnorge\\Html\\HtmlFacade"
+            }
+        }
+    }
+}
